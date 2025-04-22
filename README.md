@@ -47,6 +47,15 @@ The Gold layer provides:
 - Total revenue per store
 - Monthly revenue trends
 - Product sales distributions
+  
+---
+
+## Star Schema (Gold Layer)
+
+The following diagram shows the dimensional model created in the Gold layer using the Medallion Architecture approach:
+
+![Star Schema](star_schema.png)
+
 
 
 
