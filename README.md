@@ -4,8 +4,6 @@
 
 ## Project Overview
 
-## 🧠 Project Overview
-
 This project demonstrates the design and implementation of a scalable **ETL data pipeline** using the **Medallion Architecture** on **Databricks**, with an emphasis on applying **SQL**, **Spark**, and structured data modeling best practices.
 
 The goal is to ingest, clean, transform, and aggregate retail sales data in order to support performance analysis across products and stores.
