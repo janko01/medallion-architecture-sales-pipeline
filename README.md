@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-This project demonstrates how to build a scalable data pipeline using the **Medallion Architecture** on **Databricks**. The goal is to clean, transform, and aggregate retail sales data to help identify performance trends across products and stores.
+This project demonstrates how to build a scalable data pipeline using the **Medallion Architecture** on **Databricks**. The goal is to clean, transform, and aggregate retail sales data to help identify performance trends across products and stores. Source .xlsx file [Check it out](medallion-architecture-data-pipeline/resources)
 
 The pipeline was created as part of a junior data engineering challenge for a company case task.
 
@@ -28,6 +28,7 @@ The pipeline was created as part of a junior data engineering challenge for a co
   - Top-selling products
   - Monthly sales trends
 - Provides curated tables for downstream analytics and reporting
+- Includes a separate notebook: **Key KPI Queries.ipynb**, which contains all the SQL queries used to analyze the data in the Gold layer
 
 ---
 
@@ -56,7 +57,6 @@ The following diagram shows the dimensional model created in the Gold layer usin
 ![Star Schema](star-schema.png)
 
 
-[star-schema.png]
 
 
 
