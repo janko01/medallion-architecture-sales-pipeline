@@ -54,7 +54,7 @@ The Gold layer provides:
 
 The following diagram shows the dimensional model created in the Gold layer using the Medallion Architecture approach:
 
-![Star Schema](star_schema.png)
+![star-schema.png]
 
 
 
