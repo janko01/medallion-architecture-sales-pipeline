@@ -4,7 +4,24 @@
 
 ## Project Overview
 
-This project demonstrates how to build a scalable data pipeline using the **Medallion Architecture** on **Databricks**. The goal is to clean, transform, and aggregate retail sales data to help identify performance trends across products and stores. Source .xlsx file [Check it out](medallion-architecture-data-pipeline/resources)
+## 🧠 Project Overview
+
+This project demonstrates the design and implementation of a scalable **ETL data pipeline** using the **Medallion Architecture** on **Databricks**, with an emphasis on applying **SQL**, **Spark**, and structured data modeling best practices.
+
+The goal is to ingest, clean, transform, and aggregate retail sales data in order to support performance analysis across products and stores.
+
+The source dataset is provided in an Excel file containing **eight sheets**, each representing a separate table.  
+📄 [View the source `.xlsx` file](medallion-architecture-data-pipeline/resources)
+
+Each sheet was parsed and loaded into Databricks as an individual Spark DataFrame. The pipeline was then built as follows:
+
+- **Bronze Layer**: Ingests raw CSV data into Delta tables with minimal transformation.
+- **Silver Layer**: Applies data cleaning, normalization, and enrichment using PySpark and SQL.
+- **Gold Layer**: Aggregates key business metrics and models the data into a **Star Schema** for optimized querying and reporting.
+
+The final output is analytics-ready and can be seamlessly integrated with tools like **Tableau** or **Power BI** for data visualization.
+
+This project highlights practical experience in building ETL pipelines, working with **Spark DataFrames**, writing **SQL queries**, and leveraging **Databricks** for end-to-end data processing.
 
 The pipeline was created as part of a junior data engineering challenge for a company case task.
 
