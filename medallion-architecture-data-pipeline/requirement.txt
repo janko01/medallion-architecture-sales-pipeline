@@ -1,0 +1,15 @@
+# This is a short and simple python script which helps me
+# in creating CSV files out of Excel document that I have in resource folder 
+
+import pandas as pd
+
+# Path to the source document
+file_path = "C:\\Users\\Dell 5530\\Desktop\\Janko_Zivaljevic_GeT_Domaci\\оriginalni file\\CaseStudyBI.xlsx"
+xls = pd.ExcelFile(file_path) # loading the whole file
+
+# Loop through all of the sheets
+for sheet_name in xls.sheet_names:
+    df = xls.parse(sheet_name)
+
+    output_csv = f"{sheet_name}.csv" 
+    df.to_csv(output_csv, index=False) # saving a df as csv file
